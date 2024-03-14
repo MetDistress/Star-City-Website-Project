@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--
+	 Assignment #5
+	 Author: Christian Gower
+	 Due Date:	11-12-2020
+
+	 Filename: sc_events.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Star City, DC, Arrow, Green Arrow, Starling City, comic book" />
+	<title>Gower: Assign 5</title>
+	<link href="gower_styles.css" rel="stylesheet" />
+	<script src="gower_script.js"></script>
+</head>
+	
+<body>
+	<header>
+		<a href="sc_index.html"><img src="gower_logo.png" alt="Star City" /></a>
+		<h1>Home of the Emerald Archer(Green Arrow)</h1>
+	</header>
+	<nav id="T">
+		<ul>
+			<li><a href="sc_index.html">About</a></li>
+			<li><a href="sc_interests.html">POI</a></li>
+			<li><a href="sc_businesses.html">Businesses</a></li>
+			<li><a href="sc_events.html">Events</a></li>
+			<li><a href="sc_index.html#CO">City Officials</a></li>
+			<li><a href="sc_index.html#RN">News</a></li>
+		</ul>	
+	</nav>
+	<main>
+		<br>
+		<h2>Submit an Upcoming Event</h2>
+			<form id="event" action="formProcessor.html" method="get" name=appinfo> 
+				<fieldset id="appinfo">
+					<legend>Contact Information</legend>
+					<label for="nBox"> Name</label>
+					<input name="Name" id="nBox" type="text" /> 
+					
+					<label for="emailBox">E-Mail</label>
+					<input name="email" id="emailBox" type="email" />
+			
+					<label for="phoneBox">Phone Number</label>
+					<input name="phoneNumber" id="phoneBox" type="tel" />
+					
+					<label for="siteBox">Website</label>
+					<input name="website" id="siteBox" type="url" />
+				</fieldset>
+				
+				<fieldset id="eventinfo">
+					<legend>Event Information</legend>
+					<label for="enBox">Event Name</label>
+					<input name="eventName" id="enBox" type="text" /> 
+					
+					<label for="locList">Location</label>
+					<select name="location" id="locList">
+						<option value="blank">&nbsp;</option>
+						<option value="glades">The Glades</option>
+						<option value="ptech">Palmer Tech</option>
+						<option value="scbay">Star City Bay</option>
+						<option value="verdant">Verdant</option>
+					</select>
+						
+					<label for="dateBox">Date</label>
+					<input name="eventDate" id="dateBox" type="date" />
+					
+					<label>Admission Cost</label>
+				<fieldset class="adCost">
+					<input name="cost" id="a0" value="$0-10" type="radio" />
+					<label for="a0">$0-10</label>
+					<input name="cost" id="a11" value="$11-25" type="radio" />
+					<label for="a11">$11-25</label>
+					<br>
+					<input name="cost" id="a26" value="$26-50" type="radio" />
+					<label for="a26">$26-50</label>
+					<input name="cost" id="a51" value="$51-100" type="radio" />
+					<label for="a51">$51-100</label>
+				</fieldset>
+				</fieldset>
+				<fieldset id="moreinfo">
+					<legend>More Event Information</legend>
+					<label for="descBox">Event Description</label>
+					<textarea name="evDescription" id="descBox"></textarea>
+				
+					<label for="restrictBox">Minimum Age Restrictions</label>
+					<input name="restrictions" id="restrictBox" type="number" min="6" max="60" />
+				</fieldset>
+				
+					<input id="submit" type="submit" value="Send Event Request" />
+			</form>
+	</main>
+	<footer>
+		<p id="date"></p>
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
+		&#169; Fall 2020 Christian Gower 
+		<p>Email: <a href="mailto:cg19198@georgiasouthern.edu">cg19198@georgiasouthern.edu</a></p>
+	</footer>
+	<script>
+		submitEvents();
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--
+	 Assignment #5
+	 Author: Christian Gower
+	 Due Date:	11-12-2020
+
+	 Filename: sc_interests.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Star City, DC, Arrow, Green Arrow, Starling City, comic book" />
+	<title>Gower: Assign 5</title>
+	<link href="gower_styles.css" rel="stylesheet" />
+	<script src="gower_script.js"></script>
+</head>
+	
+<body>
+	<header>
+		<a href="sc_index.html"><img src="gower_logo.png" alt="Star City" /></a>
+		<h1>Home of the Emerald Archer(Green Arrow)</h1>
+	</header>
+	<nav>
+		<ul>
+			<li><a href="sc_index.html">About</a></li>
+			<li><a href="sc_interests.html">POI</a></li>
+			<li><a href="sc_businesses.html">Businesses</a></li>
+			<li><a href="sc_events.html">Events</a></li>
+			<li><a href="sc_index.html#CO">City Officials</a></li>
+			<li><a href="sc_index.html#RN">News</a></li>
+		</ul>	
+	</nav>
+	<main>
+		<br>
+		<h2>Points of Interest</h2>
+			<img src="images/sc_glades.png" alt="The Glades" id="The Glades" />
+			<h3>The Glades</h3>
+				<p>The Glades, a (formerly high-poverty rate)neighborhood in Star City, has fallen under hard times in the past, but thanks to caring citizens like Rene Ramirez, the Glades is turning over a new leaf. It has recently become one of the most rapidly developing areas in the United States. Crime is at an all-time low and the city population has nearly doubled since 2012. People finally feel safe again in the Glades.</p>
+			<br class="a">
+			<img src="images/sc_tech.png" alt="Palmer Technologies" id="Palmer Tech" />
+			<h3>Palmer Tech</h3>
+				<p>Dr. Raymond Palmer, a genius and a philanthropist, is the founder and CEO of Palmer Technologies. Palmer Tech has contributed largely to the Star City robotics industry, inspired the city to become a better place to live, and caused the city to thrive in recent years. </p>
+			<br class="b">
+			<img src="images/sc_mansion.png" alt="The Queen Mansion" id="Queen Mansion"/>
+			<h3>Queen Mansion</h3>
+				<p>The former home of the Queen family, head of Queen Industries, the Queen Mansion sadly burned down in 2014. It's still a mystery on how it happened to this day. Some believe it was arson, others believe it was just a tragic accident. What we do know is that the Queen family has had an unfortunate history. Robert Queen died at sea, on their yacht. Robert's son, Oliver, survived and ended up on a deserted island for five years before being rescued. Moira Queen, Oliver's mother, was murdered by Slade Wilson. Despite the listed tragedies, the corpse of the Queen Mansion is one of the most visited sites in all of Star City.</p>
+			<br class="c">
+			<img src="images/sc_ind.png" alt="Queen Industries" id="Queen Industries"/>
+			<h3>Queen Industries</h3>
+				<p>Queen Industries was the pride and joy of Star City in the past, but now lies in ruins due to the number of terrorist attacks on the city. You will still find Queen Industry logos on many buildings you pass in the city. Be on the lookout!</p>
+			<br class="d">
+			<img src="images/sc_bay.png" alt="Star City Bay" id="Star City Bay"/>
+			<h3>Star City Bay</h3>
+				<p>Star City bay did not always look as stellar as it does today. It used to be nothing more than a place for people to throw their litter on the ground, but thanks to the Mayor's restoration projects into the bay, it now is in prime condition and a tourist hotspot. You can find a memorial statue for the Black Canary, or Laurel Lance, who was thought to have passed away in 2015, but was found to be alive in 2017. Come to the Star City Bay for an awesome experience for the whole family!</p>
+			<br class="e">
+	</main>
+	<footer>
+		<p id="date"></p>
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
+		&#169; Fall 2020 Christian Gower 
+		<p>Email: <a href="mailto:cg19198@georgiasouthern.edu">cg19198@georgiasouthern.edu</a></p>
+	</footer>
+	<script>
+	
+		var glades = document.getElementById("The Glades");
+		var palmer = document.getElementById("Palmer Tech");
+		var mansion = document.getElementById("Queen Mansion");
+		var industries = document.getElementById("Queen Industries");
+		var bay = document.getElementById("Star City Bay");
+		
+		glades.addEventListener("click", function() {
+			poi(this.id);
+		})
+		
+		palmer.addEventListener("click", function() {
+			poi(this.id);
+		})
+		
+		mansion.addEventListener("click", function() {
+			poi(this.id);
+		})
+		
+		industries.addEventListener("click", function() {
+			poi(this.id);
+		})
+		
+		bay.addEventListener("click", function() {
+			poi(this.id);
+		})
+	
+	</script>
+</body>
+</html>

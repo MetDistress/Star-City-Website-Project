@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--
+	 Assignment #5
+	 Author: Christian Gower
+	 Due Date:	11-12-2020
+
+	 Filename: sc_index.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Star City, DC, Arrow, Green Arrow, Starling City, comic book" />
+	<title>Gower: Assign 5</title>
+	<link href="gower_styles.css" rel="stylesheet" />
+	<script src="gower_script.js"></script>
+</head>
+
+<body>
+	<header>
+		<a href="sc_index.html"><img src="gower_logo.png" alt="Star City" /></a>
+		<h1>Home of the Emerald Archer(Green Arrow)</h1>
+	</header>
+	<nav id="T">
+		<ul>
+			<li><a href="sc_index.html">About</a></li>
+			<li><a href="sc_interests.html">POI</a></li>
+			<li><a href="sc_businesses.html">Businesses</a></li>
+			<li><a href="sc_events.html">Events</a></li>
+			<li><a href="#CO">City Officials</a></li>
+			<li><a href="#RN">News</a></li>
+		</ul>	
+	</nav>
+	<main>
+		<br>
+		<h2>About the City</h2>
+			<p>Star City has a unique and dangerous history. There have been numerous terrorist attacks and sieges on the city in more recent years, such as the earthquake in the Glades(a neighborhood within Star City). However, Star City is home to the one and only Green Arrow himself, who has fought time and time again to protect this city.Star City is also a hub for technology. Queen Consolidated, Palmer Tech, Helix Dynamics, and the Merlyn Global Group are just a few companies that have flourished in our great City.</p>
+			
+			<p>I chose this city because it gave birth to one of the greatest heroes to exist. The Green Arrow, whose identity has remained to be a mystery, has become a guardian angel for our great city. Over the years, he has assembled a team of remarkable people, such as Wild Dog, the Black Canary, Mr. Terrific, Spartan, Arsenal, Speedy, and Overwatch.</p>
+		<h2 id="CO">City Officials</h2>
+			<script>
+				officials();
+			</script>
+		<h2 id="RN">Related City News</h2>
+			<p><a href="https://en.wikipedia.org/wiki/Green_Arrow">Who is the Green Arrow?</a></p>
+			<p><a href="https://arrow.fandom.com/wiki/Quentin_Lance">Deputy Mayor Quentin Lance's Alcoholic Past!</a></p>
+			<p><a href="https://en.wikipedia.org/wiki/Star_City_(comics)">Goodbye Starling City, Hello Star!</a></p>
+	</main>
+	<footer>
+		<script>
+		document.write("<p id='date'></p>");
+		document.getElementById("date").innerHTML = Date();
+		</script>
+		&#169; Fall 2020 Christian Gower 
+		<p>Email: <a href="mailto:cg19198@georgiasouthern.edu">cg19198@georgiasouthern.edu</a></p>
+	</footer>
+</body>
+
+</html>

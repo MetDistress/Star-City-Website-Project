@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<!--
+	 Assignment #5
+	 Author: Christian Gower
+	 Due Date:	11-12-2020
+
+	 Filename: sc_businesses.html
+	-->
+	<meta charset="utf-8" />
+	<meta name="keywords" content="Star City, DC, Arrow, Green Arrow, Starling City, comic book" />
+	<title>Gower: Assign 5</title>
+	<link href="gower_styles.css" rel="stylesheet" />
+	<script src="gower_script.js"></script>
+</head>
+	
+<body>
+	<header>
+		<a href="sc_index.html"><img src="gower_logo.png" alt="Star City" /></a>
+		<h1>Home of the Emerald Archer(Green Arrow)</h1>
+	</header>
+	<nav id="T">
+		<ul>
+			<li><a href="sc_index.html">About</a></li>
+			<li><a href="sc_interests.html">POI</a></li>
+			<li><a href="sc_businesses.html">Businesses</a></li>
+			<li><a href="sc_events.html">Events</a></li>
+			<li><a href="sc_index.html#CO">City Officials</a></li>
+			<li><a href="sc_index.html#RN">News</a></li>
+		</ul>	
+	</nav>
+	<main>
+	<br>
+		<h2>Local Businesses</h2>
+			<table>
+			<caption>*All businesses listed are still in operation*</caption>
+				<tr>
+					<th>Name</th>
+					<th>Location</th>
+					<th>Years in Business</th>
+					<th>Type of Business</th>
+				</tr>
+				<tr>
+					<th>Big Belly Burger</th>
+					<td>311 Berlanti St</td>
+					<td>Est. 1995</td>
+					<td>Fast Food Restaurant</td>
+				</tr>
+				<tr>
+					<th>Tech Village</th>
+					<td>1492 West-Allen Ave</td>
+					<td>Est. 1988</td>
+					<td>Retail and Electronics</td>
+				</tr>
+				
+				<tr>
+					<th>JH Moving and Storage</th>
+					<td> 1620 7th St</td>
+					<td>Est. 2012</td>
+					<td>Storage Rental</td>
+				</tr>
+				
+				<tr>
+					<th>STAR Labs</th>
+					<td>1006 Garrick Lane</td>
+					<td>Est. 2009</td>
+					<td>Research and Development</td>
+				</tr>
+				
+				<tr>
+					<th>Lance's Grill</th>
+					<td>915 Kripke Ln</td>
+					<td>Est. 2016</td>
+					<td>Bar and Grill</td>
+				</tr>
+				
+				<tr>
+					<th>Verdant</th>
+					<td>514 12th St</td>
+					<td>Est. 2012</td>
+					<td>Night Club</td>
+				</tr>
+				
+				<tr>
+					<th>Lockwood Steel</th>
+					<td>730 Weisinger Rd</td>
+					<td>Est. 1934</td>
+					<td>Manufacturing</td>
+				</tr>
+
+			</table>
+	</main>
+	<footer>
+		<p id="date"></p>
+		<script>
+		document.getElementById("date").innerHTML = Date();
+		</script>
+		&#169; Fall 2020 Christian Gower 
+		<p>Email: <a href="mailto:cg19198@georgiasouthern.edu">cg19198@georgiasouthern.edu</a></p>
+	</footer>
+	<script>
+		business();
+	</script>
+	</body>
+
+</html>
